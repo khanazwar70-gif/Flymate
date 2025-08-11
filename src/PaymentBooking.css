@@ -1,0 +1,214 @@
+.payment-container, .confirmation-container {
+  min-height: 100vh;
+  background-image: url('./images/background.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Segoe UI', sans-serif;
+  padding: 40px 10px;
+  position: relative;
+}
+
+.payment-card, .confirmation-card, .payment-summary, .confirmation-summary {
+  background: rgba(255,255,255,0.18);
+  border: 1.5px solid #fff;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 18px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.13);
+}
+
+.payment-card, .confirmation-card {
+  padding: 32px 28px;
+  max-width: 480px;
+  width: 100%;
+  color: #222;
+}
+
+.payment-card h2, .confirmation-card h2 {
+  color: #fff;
+  margin-bottom: 18px;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.payment-summary, .confirmation-summary {
+  margin-bottom: 24px;
+  padding: 18px 16px;
+  color: #222;
+  font-size: 1rem;
+}
+
+.payment-summary strong, .confirmation-summary strong,
+.confirmation-card .success, .confirmation-card .ref {
+  color: #003366;
+  font-weight: bold;
+}
+
+.payment-methods {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 18px;
+  justify-content: center;
+}
+
+.payment-methods label {
+  font-weight: 600;
+  color: #222;
+  cursor: pointer;
+}
+
+.input-row {
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-row label {
+  font-weight: 500;
+  margin-bottom: 5px;
+  color: #222;
+}
+
+.input-row input {
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 16px;
+  background: rgba(255,255,255,0.25);
+  color: #003366;
+  border: 1px solid #fff;
+}
+
+.input-row input::placeholder {
+  color: #888;
+}
+
+.pay-btn {
+  background-color: #28a745;
+  color: white;
+  padding: 14px 0;
+  border: none;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+.pay-btn:hover {
+  background-color: #218838;
+}
+
+.confirmation-card .success {
+  color: #28a745;
+  font-size: 1.3rem;
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.confirmation-card .ref {
+  color: #0059b3;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.confirmation-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.confirmation-actions button, .confirmation-actions a {
+  background-color: #0059b3;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 0;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.confirmation-actions button:hover, .confirmation-actions a:hover {
+  background-color: #0098b3;
+}
+
+.confirmation-card .success, .confirmation-card .ref {
+  color: #fff !important;
+  font-weight: bold;
+}
+.confirmation-actions button:first-child {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 0;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+.confirmation-actions button:first-child:hover {
+  background-color: #218838;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.footer {
+  color: #111;
+  background: none;
+  text-align: center;
+  padding: 20px 0 10px 0;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: auto;
+}
+
+.back-flights-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: #0066cc;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 22px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 10;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: background 0.2s;
+}
+
+.back-flights-btn:hover {
+  background: #004d99;
+}
+
+@media (max-width: 600px) {
+  .payment-card, .confirmation-card {
+    padding: 16px 6px;
+    margin-top: 10px;
+  }
+
+  .payment-summary, .confirmation-summary {
+    padding: 10px 6px;
+  }
+}
